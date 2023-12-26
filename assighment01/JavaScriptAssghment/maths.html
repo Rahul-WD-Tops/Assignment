@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .mobile {
+            padding: 20px 40px;
+        }
+
+        .container {
+            margin: 0 auto;
+            justify-content: center;
+            border: 5px solid black;
+            height: 500px;
+            width: 40%;
+            text-align: center;
+            background-image: url(../../../website/IMAGE/colgulatore01.jpg);
+            gap: 50px;
+            box-shadow: 1 rgb(21, 20, 20);
+        }
+
+        input {
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            border: 2px solid blue;
+            /* box-shadow:; */
+        }
+
+        #total {
+            padding: 40px 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 2px solid blue;
+            color: black;
+
+            text-shadow: 50px;
+        }
+    </style>
+</head>
+<h1>• Create basic math operation in JS</h1>
+
+<body>
+    <div class="container">
+        <input type="text" value="" id="mobile" />
+        <br />
+        <input type="text" value="" id="mobile-1" />
+        <br />
+
+        <button id="total" onclick="add()">+</button>
+        <button id="total" onclick="min()">-</button>
+        <button id="total" onclick="Rahul()">*</button>
+        <button id="total" onclick="Rahul2()">/</button>
+        <button id="total" onclick="Rahul1()">%</button>
+
+        <br />
+        <input type="text" id="result" />
+    </div>
+
+
+    <script>
+        function add() {
+            let a = parseFloat(document.getElementById("mobile").value);
+            let b = parseFloat(document.getElementById("mobile-1").value);
+            let total = a + b;
+            document.getElementById("result").value = total;
+        }
+
+        function min() {
+            let a = parseFloat(document.getElementById("mobile").value);
+            let b = parseFloat(document.getElementById("mobile-1").value);
+            let total = a - b;
+            document.getElementById("result").value = total;
+        }
+
+        function Rahul() {
+            let a = parseFloat(document.getElementById("mobile").value);
+            let b = parseFloat(document.getElementById("mobile-1").value);
+            let total = a * b;
+            document.getElementById("result").value = total;
+        }
+        function Rahul2() {
+            let a = parseFloat(document.getElementById("mobile").value);
+            let b = parseFloat(document.getElementById("mobile-1").value);
+            let total = a / b;
+            document.getElementById("result").value = total;
+        }
+
+        function Rahul1() {
+            let a = parseFloat(document.getElementById("mobile").value);
+            let b = parseFloat(document.getElementById("mobile-1").value);
+            let total = a % b;
+            document.getElementById("result").value = total;
+        }
+    </script>
+     
+</body>
+
+</html>
