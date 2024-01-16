@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create result </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .h3 {
+            margin-left: 50px;
+        }
+
+        .chart {
+            border: 2px solid black;
+            margin-left: 20%;
+            width: 50%;
+        }
+
+        label {
+            width: 250px;
+            display: inline-block;
+            padding: 5px;
+
+        }
+
+        .Result {
+            align-items: center;
+
+        }
+
+        .butt {
+            margin-left: 230px;
+            padding: 20px;
+        }
+
+        .army {
+            padding: 20PX;
+            display: flex;
+            gap: 200PX;
+        }
+
+        .mark {
+            margin-left: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>.Create result</h3>
+
+    <div class="chart">
+        <h1>Matkshit For Infomation Technology</h1>
+        <div class="mark">
+            <p>Enter Marks</p>
+        </div>
+        <label>1. C Language</label>
+        <input id="rahul01" type="text"> <br>
+
+        <label>2. C++ Language</label>
+        <input id="rahul02" type="text"> <br>
+
+        <label>3. Database</label>
+        <input id="rahul03" type="text"> <br>
+
+        <label>4. HTML</label>
+        <input id="rahul04" type="text"> <br>
+
+        <label>5. CSS</label>
+        <input id="rahul05" type="text"> <br>
+
+        <label>6. php </label>
+        <input id="rahul06" type="text"> <br>
+
+        <label>7. Core Java </label>
+        <input id="rahul07" type="text">
+        <div class="butt">
+            <button id="Result" onclick="add()">Result</button>
+        </div>
+        <div class="army">
+            <p>Total is : <span id="final"></span></p>
+            <p>Percentage is : <span id="final01"></span></p>
+        </div>
+    </div>
+    <script>
+        function add() {
+            let a = parseInt(document.getElementById("rahul01").value);
+            let b = parseInt(document.getElementById("rahul02").value);
+            let c = parseInt(document.getElementById("rahul03").value);
+            let d = parseInt(document.getElementById("rahul04").value);
+            let e = parseInt(document.getElementById("rahul05").value);
+            let f = parseInt(document.getElementById("rahul06").value);
+            let g = parseInt(document.getElementById("rahul07").value);
+
+            let total = a + b + c + d + e + f + g;
+            document.getElementById("final").innerText = total;
+
+            let pr = (100 * total) / 350
+            document.getElementById("final01").innerText = pr;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
